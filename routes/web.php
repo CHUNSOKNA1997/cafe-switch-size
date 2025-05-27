@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 // Show product list
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
+
+// Update product size
 Route::post('/products/update-size', [ProductController::class, 'updateSize']);
 
 // Create product
